@@ -1,0 +1,4 @@
+_target_: aurl.models.resnets.resnetish18
+encoder_name: resnet18
+num_classes: ???
+num_mics : ???

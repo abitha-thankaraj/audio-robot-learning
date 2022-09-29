@@ -1,0 +1,4 @@
+_target_: aurl.optimizers.lars.LARS
+params: ???
+lr: 0.2
+weight_decay: 1.5e-6

@@ -1,0 +1,12 @@
+data_dir: /path/to/dataset_horizontal_probing
+dataset_name: horizontal-probing
+max_num_frames: 90000
+
+name: wav
+
+sample_rate: 44100
+resample_rate: 11000
+
+
+num_mics: 2
+action_dim: 7

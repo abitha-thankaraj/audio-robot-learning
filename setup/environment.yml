@@ -1,0 +1,14 @@
+name: aurl
+channels:
+  - defaults
+dependencies:
+  - python=3.10.6
+  - pytorch
+  - torchvision
+  - cudatoolkit=11.3
+  - torchaudio
+  - einops
+  - easydict
+  - tslearn
+  - sklearn
+  - hydra=1.2

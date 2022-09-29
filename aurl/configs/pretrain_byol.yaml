@@ -1,0 +1,40 @@
+defaults:
+    - _self_
+    - model: resnet18
+    - dataset: rattle/mel
+    - aurl: aurl
+
+optimizer: LARS
+lr: 0.2
+weight_decay: 1.5e-6
+
+experiment: ${dataset.dataset_name}_${ssl.aurl_v}
+wandb_project: soundbot
+
+seed: 42
+device: cuda:0
+
+norm_audio_data: true
+
+latent_dim: 512
+
+epochs: 1000
+eval_frequency: 100
+
+batch_size: 1024
+num_workers: 12
+
+num_test_pts: 
+num_train_pts:
+
+checkpoint_dir: ???
+
+log_wandb: false
+
+# logger
+log_frequency: 1
+
+# hydra configuration
+hydra:
+    run:
+        dir: /data/aurl-exps/${now:%Y.%m.%d}/${now:%H-%M-%s}_${experiment}

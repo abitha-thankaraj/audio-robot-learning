@@ -1,0 +1,7 @@
+*.egg-info
+*.pyc
+data/*
+**__pycache__
+**wandb/*
+aurl/wandb
+**.sh

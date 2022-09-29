@@ -1,0 +1,16 @@
+data_dir: /path/to/dataset_tambourine
+dataset_name: tambourine
+max_num_frames: 100000 
+
+name: mel
+
+sample_rate: 44100
+hop_length: 200
+n_fft: 400
+n_mels: 16
+resample_rate: 11000
+
+normalize: true
+
+num_mics : 1
+action_dim: 3

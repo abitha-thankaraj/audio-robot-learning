@@ -1,0 +1,15 @@
+data_dir: /path/to/dataset_vertical_probing
+dataset_name: vertical-probing
+max_num_frames: 90000 
+
+name: mel
+
+sample_rate: 44100
+hop_length: 200
+n_fft: 400
+n_mels: 16
+resample_rate: 11000
+normalize: true
+
+num_mics : 2
+action_dim: 7

@@ -1,0 +1,47 @@
+defaults:
+    - _self_
+    - model: resnet18
+    - optimizer: adam
+    - dataset: rattle/mel
+
+# Add description on cmd line when you run it.
+desc:
+experiment: ${dataset.dataset_name}_${desc}
+
+video: false
+wandb_project: soundbot
+
+seed: 42
+device: cuda:0
+
+norm_action: true
+norm_audio_data: true
+apply_augmentation: false
+
+# Leave encoder_dir blank for all regular supervised training; Fill in only for finetuning
+encoder_dir:
+freeze_encoder: false
+latent_dim: 512
+hidden_dims : []
+
+
+train_epochs: 1000
+eval_frequency: 10
+
+batch_size: 1024
+num_workers: 8
+num_test_pts: 200
+num_train_pts: 800 # default - use all 800 unique actions
+
+checkpoint_dir: ???
+save_test_fnames: true
+
+log_wandb: false
+
+# logger
+log_frequency: 1
+
+# hydra configuration
+hydra:
+    run:
+        dir: /data/aurl-exps/${now:%Y.%m.%d}/${now:%H-%M-%s}_${experiment}

@@ -1,0 +1,11 @@
+data_dir: /path/to/dataset_rattle
+dataset_name: rattle
+
+max_num_frames: 100000
+
+name: wav
+sample_rate: 44100
+resample_rate: 11000
+
+num_mics : 1
+action_dim: 3
