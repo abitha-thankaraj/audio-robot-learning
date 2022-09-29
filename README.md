@@ -3,6 +3,8 @@ That Sounds Right: Auditory Self-Supervision for Dynamic Robot Manipulation
 
 [Project Page](https://audio-robot-learning.github.io/)
 
+For robot rollouts and data collection: Refer [sound-supervised-bot](https://github.com/abitha-thankaraj/sound-supervised-bot)
+
 ## Installation Instructions
 1. Clone the repo
 ```
