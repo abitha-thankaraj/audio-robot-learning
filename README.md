@@ -16,11 +16,6 @@ cd audio-robot-learning/
 ```
 conda env create -f setup/environment.yaml
 ```
-OR 
-```
-cd setup/
-pip install -r requirements.txt
-```
 
 3. Install the `aurl` library
 ```
